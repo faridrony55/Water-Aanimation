@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+body{
+
+}
+.water{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+}
+h1{
+	font-family: 'Anton', sans-serif;
+	font-size: 12em;
+	text-transform: uppercase;
+	background-image: url(../images/water.jpg);
+	background-size: contain;
+	background-repeat: repeat;
+	-webkit-background-clip:text;
+	color:transparent;
+	font-weight: 900;
+	animation-name: wave;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	background-position: left top;
+}
+@keyframes wave{
+	from{
+		background-position: left top;
+	}
+	to{
+
+		background-position: right bottom;
+	}
+}
+
+.ytp-title-text{
+	display: none;
+}
+.ytp-chrome-top.ytp-show-cards-title {
+    display: none !important;
+}
+#shopify-section-1496931921192 .custom-content {
+    overflow: hidden;
+}
+#shopify-section-1496931921192 .custom-content .custom__item {
+    position: relative;
+    top: -52px;
+}
